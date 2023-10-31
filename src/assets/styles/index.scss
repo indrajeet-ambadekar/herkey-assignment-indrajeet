@@ -156,6 +156,11 @@ body {
       .app-header {
         .elc_ui-header-app-logo {
           width: 80%;
+          .elc_ui-header-hamburger-btn {
+            i {
+              color: $text-black;
+            }
+          }
         }
         .elc_ui-header-profile-wrapper {
           width: 20%;

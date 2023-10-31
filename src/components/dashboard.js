@@ -138,6 +138,14 @@ const Dashboard = ({ ...props }) => {
           </div>
         </Column>
       </div>
+      <footer className='footer'>
+        <div>2019 @ Jobsforher</div>
+        <div>
+          <span>About Us</span>
+          <span>Pricing</span>
+          <span>FAQ's</span>
+        </div>
+      </footer>
     </div>
   );
 };
