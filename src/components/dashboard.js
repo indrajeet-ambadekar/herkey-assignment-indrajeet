@@ -18,14 +18,14 @@ const Dashboard = ({ ...props }) => {
               My Profile <img src={EditIcon} alt='edit icon' />
             </div>
             <div className='content-section'>
-              <Column md={3}>
+              <Column md={3} xs={4}>
                 <div className='user-profile-pic'>
                   <div className='edit-icon'>
                     <img src={EditIcon} alt='edit icon' />
                   </div>
                 </div>
               </Column>
-              <Column md={9}>
+              <Column md={9} xs={8}>
                 <div className='user-info'>
                   <Text type='h2'>Divya Chattejee</Text>
                   <Text type='b1' className='label'>
@@ -54,13 +54,13 @@ const Dashboard = ({ ...props }) => {
             </div>
           </div>
         </Column>
-        <Column md={6}>
+        <Column md={6} xs={12}>
           <div className='content-wrapper'>
             <div className='title-bar'>
               Application Settings <img src={EditIcon} alt='edit icon' />
             </div>
             <div className='content-section'>
-              <Column md={6}>
+              <Column md={6} xs={12}>
                 <div className='user-info'>
                   <Text type='b2' className='label'>
                     Full Name<sup>*</sup>
@@ -68,7 +68,7 @@ const Dashboard = ({ ...props }) => {
                   <Text type='h5'>Divya Chatterjee</Text>
                 </div>
               </Column>
-              <Column md={6}>
+              <Column md={6} xs={12}>
                 <div className='user-info'>
                   <Text type='b2' className='label'>
                     Designation
@@ -76,7 +76,7 @@ const Dashboard = ({ ...props }) => {
                   <Text type='h5'>Assistant Manager - HR</Text>
                 </div>
               </Column>
-              <Column md={6}>
+              <Column md={6} xs={12}>
                 <div className='user-info'>
                   <Text type='b2' className='label'>
                     Phone / Landline*
@@ -84,7 +84,7 @@ const Dashboard = ({ ...props }) => {
                   <Text type='h5'>7012248563</Text>
                 </div>
               </Column>
-              <Column md={6}>
+              <Column md={6} xs={12}>
                 <div className='user-info'>
                   <Text type='b2' className='label'>
                     &nbsp;
@@ -97,7 +97,7 @@ const Dashboard = ({ ...props }) => {
             </div>
           </div>
         </Column>
-        <Column md={6}>
+        <Column md={6} xs={12}>
           <div className='content-wrapper'>
             <div className='title-bar'>
               My Account Settings <img src={EditIcon} alt='edit icon' />
@@ -138,6 +138,14 @@ const Dashboard = ({ ...props }) => {
           </div>
         </Column>
       </div>
+      <footer className='footer'>
+        <div>2019 @ Jobsforher</div>
+        <div>
+          <span>About Us</span>
+          <span>Pricing</span>
+          <span>FAQ's</span>
+        </div>
+      </footer>
     </div>
   );
 };
