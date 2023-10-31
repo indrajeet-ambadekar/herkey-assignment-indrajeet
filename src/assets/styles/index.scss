@@ -3,10 +3,12 @@
 @import "../modules/color";
 @import "../modules/card";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
+  background-color: #f1f2f7;
   * {
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
@@ -19,10 +21,23 @@ body {
       box-shadow: 0px 15px 10px -15px #00000029;
       .elc_ui-header-app-logo {
         padding: 1rem;
-        width: 22%;
+        width: 20%;
+        .elc_ui-header-logo-wrapper {
+          width: 100%;
+
+          .logo-cntnr {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 1rem;
+          }
+        }
       }
       .elc_ui-header-nav-cntnr {
         width: 68%;
+        padding: 0 1rem;
         .nav-cntnr {
           width: 100%;
           @include vertical-center-left;
@@ -31,6 +46,7 @@ body {
             font-weight: 500;
             font-size: 16px;
             text-transform: uppercase;
+            cursor: pointer;
           }
         }
       }
@@ -49,5 +65,95 @@ body {
         }
       }
     }
+    .page-container {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      .nav-column {
+        width: 20%;
+        min-height: calc(100vh - 60px);
+        height: 100%;
+        background-color: $nav-black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        .nav-cntnr {
+          flex-shrink: 0;
+          color: $text-white;
+          .client-card {
+            padding: 1.5rem 1rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-weight: 500;
+            .elc_ui-text {
+              font-weight: 400;
+              &.client-name {
+                width: 100%;
+                @include flex-space-between();
+                line-height: 40px;
+              }
+              i {
+                color: $theme-green;
+              }
+            }
+            .client-logo {
+              border-radius: 50%;
+              width: 48px;
+              height: 48px;
+              margin-right: 1rem;
+            }
+          }
+          .nav-list-wrapper {
+            .nav-row {
+              height: 45px;
+              padding: 1rem;
+              @include vertical-center-left;
+              cursor: pointer;
+              img {
+                width: 25px;
+                height: auto;
+                margin-right: 1.5rem;
+              }
+              &.active,
+              &:focus,
+              &:active,
+              &:hover {
+                background-color: $raisin-black;
+                color: $theme-green;
+              }
+            }
+          }
+        }
+        .nav-footer {
+          color: $theme-green;
+          padding: 1rem;
+          font-weight: 400;
+          .elc_ui-text {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .blue-text {
+    color: $text-blue !important;
+  }
+  .green-text {
+    color: $theme-green !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .hidden-md {
+    display: none !important;
   }
 }

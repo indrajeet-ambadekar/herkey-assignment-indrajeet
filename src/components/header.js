@@ -1,9 +1,14 @@
 import { AppHeader, Text, Avatar } from "elysium-cloud-ui";
 import CompanyLogo from "..//assets/images/JFH_Start-Restart-Rise.png";
-export default ({ ...props }) => (
+const Header = ({ ...props }) => (
   <AppHeader
     className="app-header"
-    logo={CompanyLogo}
+    logo={
+      <div className="logo-cntnr">
+        <img src={CompanyLogo} alt="JobsForHer" />
+        <i className="fas fa-bars" />
+      </div>
+    }
     secondaryIcon={null}
     onIconClick={() => {
       console.log("Header Icon Clicked");
@@ -22,3 +27,4 @@ export default ({ ...props }) => (
     </div>
   </AppHeader>
 );
+export default Header;
