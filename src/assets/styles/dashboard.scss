@@ -161,15 +161,15 @@
           padding: 1rem 10px;
           .user-profile-pic {
             margin-top: 24px;
-            width: 90px;
-            height: 90px;
+            width: 70px;
+            height: 70px;
             .edit-icon {
-              width: 30px;
-              height: 30px;
+              width: 20px;
+              height: 20px;
               bottom: 0;
               right: 0;
               img {
-                width: 16px;
+                width: 11px;
               }
             }
           }
@@ -177,14 +177,22 @@
             .elc_ui-text {
               margin-bottom: 5px;
               &:first-child {
-                font-size: 24px;
+                font-size: 20px;
               }
-              font-size: 16px;
+              font-size: 14px;
               &.label {
-                font-size: 14px;
+                font-size: 12px;
               }
             }
           }
+        }
+      }
+    }
+    .footer {
+      div {
+        padding: 10px;
+        span {
+          width: fit-content;
         }
       }
     }
